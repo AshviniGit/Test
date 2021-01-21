@@ -1,0 +1,26 @@
+{
+    "name": "Ashvini_test_1.2",
+    "__daily_email_enabled": true,
+    "item_types": [
+        "PSOrthoTile"
+    ],
+    "filter": {
+       "type":"AndFilter",
+       "config":[
+           {
+            "type":"Dummy",
+            "field_name":"geometry",
+             "config":{
+            "gt":"2019-01-31T00:00:00Z",
+    		"lte":"2020-01-31T00:00:00Z"
+             }
+          },
+          {
+             "type": "AssetFilter",
+             "config": [
+                "analytic_sr"
+             ]
+          }
+       ]
+    }
+}
